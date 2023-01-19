@@ -20,6 +20,8 @@
         object-fit: cover;
         object-position: center 120px;
         transform: scale(1.5, 1.5);
+        opacity: 0;
+        animation: fadeIn 2s ease-in 0.5s forwards;
     }
 }
 
@@ -29,6 +31,8 @@
     left: 0;
     color: #fff;
     transform: translate(0, -40px);
+    opacity: 0;
+    animation: fadeIn 2s ease-in 3s forwards;
 
     & > p {
         font-size: 60px;
@@ -38,4 +42,9 @@
         font-size: 22px;
         letter-spacing: 12px;
     }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
