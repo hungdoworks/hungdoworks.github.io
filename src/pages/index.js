@@ -1,18 +1,14 @@
-import Head from 'next/head'
-import HomePage from './home'
+import Image from "next/image";
+import styles from "@/styles/Home.module.scss";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Minh Hai Portfolio</title>
-        <meta name="description" content="Minh Hai's portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <HomePage />
-      </main>
-    </>
+    <div className={styles.container}>
+      <Image src="/images/bg_home.jpg" alt="" fill />
+      <div style={{ position: "absolute", color: "#FFFFFF" }}>
+        <p>Minh Hai</p>
+        <p>Dancer | Performer</p>
+      </div>
+    </div>
   )
 }
