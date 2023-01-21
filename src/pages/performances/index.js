@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function PerformancesPage() {
     const titleAWoman = <span>A <span style={{wordSpacing: "-24px"}}>Wo │ man</span></span>;
-    const textAWoman = <span>A <span style={{wordSpacing: "-10px"}}>Wo │ man</span></span>;
+    const textAWoman = <span>A <span style={{wordSpacing: "-12px"}}>Wo │ man</span></span>;
 
     return (
         <div className={styles.container}>
