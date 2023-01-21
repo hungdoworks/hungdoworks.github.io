@@ -1,9 +1,18 @@
 import styles from "@/styles/components/HoverDropdown.module.scss";
+import { useRouter } from "next/router";
 
-export function HoverDropdown({children, title}) {
+export function HoverDropdown({children, title, titleUrl}) {
+    const router = useRouter();
+
+    const handleTitleClick = () => {
+        if (titleUrl) {
+            router.push("/performances");
+        }
+    };
+
     return (
         <div className={styles.dropdown}>
-            <button className={styles.dropbtn}>{title}</button>
+            <button className={styles.dropbtn} onClick={handleTitleClick}>{title}</button>
             <div className={styles.dropdownContent}>
                 {children}
             </div>
