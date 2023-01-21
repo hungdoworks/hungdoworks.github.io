@@ -4,7 +4,7 @@ import { HoverDropdown, HoverDropdownItem } from "./hover-dropdown";
 
 const NavigationData = [
     {title: "Home", url: "/"},
-    {title: "Performance", url: "/",
+    {title: "Performance", url: "/performances",
         sub: [
             { title: <span>A <span style={{wordSpacing: "-10px"}}>Wo │ man</span></span>, url: "/" },
             { title: "L'ego", url: "/" },
@@ -26,7 +26,7 @@ export default function NavigationBar() {
                     NavigationData.map((item, index) => {
                         if (item.sub) {
                             return (
-                                <HoverDropdown title={item.title}>
+                                <HoverDropdown title={item.title} titleUrl={item.url}>
                                     {
                                         item.sub.map((subItem, subIndex) => 
                                             <HoverDropdownItem 
