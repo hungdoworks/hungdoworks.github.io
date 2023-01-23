@@ -9,7 +9,7 @@ export default function WorksPage() {
             <div className={styles.content}>
                 <WorkList>
                     <WorkListItem title="Performances" imgSrc="/images/perf_a_woman.jpg" url="/performances"/>
-                    <WorkListItem title="Choreography" imgSrc="/images/perf_plum_apricot.jpg" url="/choreography" />
+                    <WorkListItem title="Choreography" imgSrc="/images/choreo_plum_apricot.jpg" url="/choreography" />
                     <WorkListItem title="Dance & Film" imgSrc="/images/others_resonance_camp.jpg" />
                 </WorkList>
             </div>
