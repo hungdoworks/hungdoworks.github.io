@@ -1,5 +1,7 @@
 import styles from "@/styles/Performances.module.scss"
-import Image from "next/image";
+import { PerformanceItem } from "@/components/performance-item";
+import { PerformanceItemContent } from "@/components/performance-item-content";
+import { PerformanceItemImage } from "@/components/performance-item-image";
 
 export default function PerformancesPage() {
     const titleAWoman = <span>A <span style={{wordSpacing: "-24px"}}>Wo │ man</span></span>;
@@ -65,27 +67,3 @@ export default function PerformancesPage() {
     );
 }
 
-function PerformanceItem({children}) {
-    return (
-        <div className={styles.performanceItem}>
-            {children}
-        </div>
-    );
-}
-
-function PerformanceItemImage({src}) {
-    return (
-        <div className={styles.performanceItemImage}>
-            <Image src={src} alt="" fill />
-        </div> 
-    );
-}
-
-function PerformanceItemContent({content, title}) {
-    return (
-        <div className={styles.performanceItemContent}>
-            <h2>{title}</h2>
-            <p>{content}</p>
-        </div>
-    );
-}
