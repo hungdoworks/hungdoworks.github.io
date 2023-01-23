@@ -24,7 +24,7 @@
 .performanceList {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 80px;
 }
 
 .performanceItem {
@@ -46,7 +46,7 @@
         position: relative;
         width: 50%;
         height: 500px;
-        padding: 40px;
+        padding: 40px 80px 40px 40px;
         display: flex;
         flex-direction: column;
         gap: 20px;
