@@ -37,7 +37,7 @@ function WorkListItem({title, imgSrc, url}) {
     return (
         <div className={styles.workListItem} onClick={handleClick}>
             <div className={styles.workListItemImage}>
-                <Image src={imgSrc} alt="" fill/>
+                <Image src={imgSrc} alt="" fill priority/>
             </div>
             <p className={styles.workListItemText}>{title}</p>
         </div>

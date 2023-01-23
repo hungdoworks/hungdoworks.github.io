@@ -1,4 +1,4 @@
-import styles from "@/styles/components/HoverDropdown.module.scss";
+import styles from "@/styles/components/NavDropdown.module.scss";
 import { useRouter } from "next/router";
 
 export function NavDropdown({children, title, titleUrl}) {
