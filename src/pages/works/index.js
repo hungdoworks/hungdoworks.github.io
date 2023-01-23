@@ -10,7 +10,7 @@ export default function WorksPage() {
                 <WorkList>
                     <WorkListItem title="Performances" imgSrc="/images/perf_a_woman.jpg" url="/performances"/>
                     <WorkListItem title="Choreography" imgSrc="/images/perf_plum_apricot.jpg" />
-                    <WorkListItem title="Dance & Film" imgSrc="/images/film.png" />
+                    <WorkListItem title="Dance & Film" imgSrc="/images/others_resonance_camp.jpg" />
                 </WorkList>
             </div>
         </div>
