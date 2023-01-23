@@ -1,6 +1,6 @@
 import styles from "@/styles/NavigationBar.module.scss";
 import Link from "next/link";
-import { HoverDropdown, HoverDropdownItem } from "./hover-dropdown";
+import { NavDropdown, NavDropdownItem } from "./nav-dropdown";
 
 const NavigationData = [
     {title: "Home", url: "/"},
@@ -26,17 +26,17 @@ export default function NavigationBar() {
                     NavigationData.map((item, index) => {
                         if (item.sub) {
                             return (
-                                <HoverDropdown title={item.title} titleUrl={item.url}>
+                                <NavDropdown title={item.title} titleUrl={item.url}>
                                     {
                                         item.sub.map((subItem, subIndex) => 
-                                            <HoverDropdownItem 
+                                            <NavDropdownItem 
                                                 key={subIndex} 
                                                 title={subItem.title}
                                                 url={subItem.url} 
                                             />
                                         )
                                     }
-                                </HoverDropdown>
+                                </NavDropdown>
                             )
                         }
                         return <Link key={index} href={item.url}>{item.title}</Link>

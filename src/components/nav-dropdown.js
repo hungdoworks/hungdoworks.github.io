@@ -1,12 +1,12 @@
 import styles from "@/styles/components/HoverDropdown.module.scss";
 import { useRouter } from "next/router";
 
-export function HoverDropdown({children, title, titleUrl}) {
+export function NavDropdown({children, title, titleUrl}) {
     const router = useRouter();
 
     const handleTitleClick = () => {
         if (titleUrl) {
-            router.push("/performances");
+            router.push(titleUrl);
         }
     };
 
@@ -20,6 +20,6 @@ export function HoverDropdown({children, title, titleUrl}) {
     );
 }
 
-export function HoverDropdownItem({title, url}) {
+export function NavDropdownItem({title, url}) {
     return <a href={url}>{title}</a>
 }
