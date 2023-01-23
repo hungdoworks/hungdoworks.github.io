@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.containerBackground}></div>
       <div className={styles.content}>
-        <Image src="/images/bg_home.jpg" alt="" fill />
+        <Image src="/images/bg_home.jpg" alt="" fill priority/>
         <div className={styles.title}>
           <p>Minh Hai</p>
           <p>Dancer | Performer</p>
