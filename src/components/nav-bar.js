@@ -12,10 +12,9 @@ const NavigationData = [
     //         { title: "Cramped", url: "/" },
     //     ]
     // },
-    {title: "Choreography", url: "/",},
-    {title: "Workshop", url: "/"},
-    {title: "Video", url: "/"},
-    {title: "About", url: "/"},
+    {title: "Workshops", url: "/"},
+    {title: "Others", url: "/"},
+    {title: "Contact", url: "/"},
 ];
 
 
