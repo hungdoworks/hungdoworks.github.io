@@ -24,14 +24,33 @@ export default function PerformancesPage() {
                     </PerformanceItem>
                     <PerformanceItem>
                         <PerformanceItemContent 
-                            title="L'ego"
-                            content={`
-                                Me – us, monochromatic – multichromatic colors, individual – collective, personal – joint story are fragments that in moments of connection create a colorful, spontaneous, hence captivating picture. L’EGO is a co-creation with influences from contemporary dance, hip hop and jazz theater. There is talk of beauty, identity and individual people, of subtle connections, emotional exchange and the many colours and shades of every moment of life.
-                            `}
+                            title="Tam Sinh"
+                            content={
+                                <>
+                                    <span>
+                                    “ Three births<br />
+                                    Three piece<br />
+                                    and one light...“
+                                    </span>
+                                </>                            
+                            }
                         />
-                        <PerformanceItemImage src="/images/perf_l_ego.jpg" />
+                        <PerformanceItemImage src="/images/perf_tam_sinh.jpg" />
                     </PerformanceItem>
                     <PerformanceItem>
+                        <PerformanceItemImage src="/images/perf_l_ego.jpg" />
+                        <PerformanceItemContent 
+                            title="L'ego"
+                            content={
+                                <>
+                                    <span>Me – us, monochromatic – multichromatic colors, individual – collective, personal – joint stories are fragments that in moments of connection create a colorful, spontaneous, hence captivating picture.</span>
+                                    <br />
+                                    <span>L'EGO is a co-creation with influences from contemporary dance, hip hop and jazz theater. There is talk of beauty, identity and individual people, of subtle connections, emotional exchange and the many colours and shades of every moment of life.</span>
+                                </>                            
+                            }
+                        />
+                    </PerformanceItem>
+                    {/* <PerformanceItem>
                         <PerformanceItemImage src="/images/perf_cramped.jpg" />
                         <PerformanceItemContent 
                             title="Cramped"
@@ -39,7 +58,7 @@ export default function PerformancesPage() {
                                 Chật – is the story on a fragile border, two individuals who have slided pass each other, met, encountered, confronted and found. The narrow and fragile space bundles tightly and compels each individual, in order to maintain their own most essential things, to scramble every bit of space. Thrusting, crushing, kicking until the end of conflict, we are dumbfounded to realize that we are empty and full of hurt. In silence, we empathize ourselves through the eyes of the opposite
                             `}
                         />
-                    </PerformanceItem>
+                    </PerformanceItem> */}
                 </div>
             </div>
         </div>
