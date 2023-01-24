@@ -7,7 +7,6 @@ export default function ChoreographyPage() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.background}></div>
             <div className={styles.content}>
                 <h1>Choreography</h1>
                 <div className={styles.performanceList}>
