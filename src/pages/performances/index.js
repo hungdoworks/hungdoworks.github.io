@@ -9,7 +9,6 @@ export default function PerformancesPage() {
 
     return (
         <div className={styles.container}>
-            <div className={styles.background}></div>
             <div className={styles.content}>
                 <h1>Performances</h1>
                 <div className={styles.performanceList}>

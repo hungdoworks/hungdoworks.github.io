@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 export default function WorksPage() {
     return (
         <div className={styles.container}>
-            <div className={styles.background}></div>
             <div className={styles.content}>
                 <WorkList>
                     <WorkListItem title="Performances" imgSrc="/images/perf_a_woman.jpg" url="/performances"/>
