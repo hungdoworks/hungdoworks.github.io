@@ -9,6 +9,7 @@
     & > h1 {
         font-size: 60px;
         color: #fff;
+        margin-bottom: 80px;
     }
 }
 
@@ -21,6 +22,7 @@
 .performanceItem {
     display: flex;
     flex-direction: row;
+    gap: 40px;
 
     &Image {
         position: relative;
@@ -37,7 +39,7 @@
         position: relative;
         width: 50%;
         height: 500px;
-        padding: 40px 80px 40px 40px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
         gap: 20px;
