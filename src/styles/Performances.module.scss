@@ -11,6 +11,23 @@
         color: #fff;
         margin-bottom: 80px;
     }
+
+    &Details {
+        & > p {
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        & .videoContainer {
+            width: 1000px;
+            height: 562.5px;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
 }
 
 .performanceList {
@@ -55,6 +72,33 @@
             font-weight: 400;
             line-height: 1.5;
             color: #fff;
+        }
+
+        & > button {
+            width: 120px;
+            height: 26px;
+            border: none;
+            background: #222;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.imageGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    justify-items: center;
+
+    & .imageContainer {
+        position: relative;
+        width: 500px;
+        height: 400px;
+
+        & > img {
+            object-fit: cover;
+            object-position: center center;
         }
     }
 }

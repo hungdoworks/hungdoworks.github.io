@@ -21,6 +21,7 @@ export default function PerformancesPage() {
                                     “{textAWoman}" is a contemporary dance play within the Goethe Institute's Antigone project (calling for innovative performances based on Sophocles' classic Greek play Antigone) was choreographed by Minh Hai and Hoang Ha. Instead of showing all philosophical layers of the original play, "{textAWoman}" focuses on looking deeper into Antigone's inner world and through this woman's journey to find the answer for the question: What can a human do when fate has been arranged? Even if it is a tragedy, how will a person proceed in the journey to her own foreknown death?
                                 </span>
                             }
+                            detailsId="a-woman"
                         />
                     </PerformanceItem>
                     <PerformanceItem>
