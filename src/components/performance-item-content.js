@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
 import styles from "@/styles/Performances.module.scss";
 
-export function PerformanceItemContent({ content, title, detailsId }) {
+export function PerformanceItemContent({ content, title, detailsUrl }) {
     const route = useRouter();
 
     const handleViewMore = () => {
-        route.push("/performances/details/" + detailsId);
+        route.push(detailsUrl);
     };
 
     return (
