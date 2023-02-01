@@ -21,6 +21,7 @@ export default function PerformancesPage() {
                                     “{textAWoman}" is a contemporary dance play within the Goethe Institute's Antigone project (calling for innovative performances based on Sophocles' classic Greek play Antigone) was choreographed by Minh Hai and Hoang Ha. Instead of showing all philosophical layers of the original play, "{textAWoman}" focuses on looking deeper into Antigone's inner world and through this woman's journey to find the answer for the question: What can a human do when fate has been arranged? Even if it is a tragedy, how will a person proceed in the journey to her own foreknown death?
                                 </span>
                             }
+                            detailsUrl="/performances/details/a-woman"
                         />
                     </PerformanceItem>
                     <PerformanceItem>
@@ -35,6 +36,7 @@ export default function PerformancesPage() {
                                     </span>
                                 </>                            
                             }
+                            detailsUrl="/performances/details/tam-sinh"
                         />
                         <PerformanceItemImage src="/images/perf_tam_sinh.jpg" />
                     </PerformanceItem>
@@ -49,6 +51,7 @@ export default function PerformancesPage() {
                                     <span>L'EGO is a co-creation with influences from contemporary dance, hip hop and jazz theater. There is talk of beauty, identity and individual people, of subtle connections, emotional exchange and the many colours and shades of every moment of life.</span>
                                 </>                            
                             }
+                            detailsUrl="/performances/details/l-ego"
                         />
                     </PerformanceItem>
                     {/* <PerformanceItem>
