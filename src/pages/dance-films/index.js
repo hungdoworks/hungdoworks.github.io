@@ -19,6 +19,7 @@ export default function DanceFilmsPage() {
                                     Resonance - Improvised Dance & Music Camp is an invitation for everyone to explore and deepen the art of improvisation by opening our senses and redirecting our bodies and minds back to nature.
                                 </span>
                             }
+                            detailsUrl="/dance-films/details/resonance-camp"
                         />
                     </PerformanceItem>
                 </div>

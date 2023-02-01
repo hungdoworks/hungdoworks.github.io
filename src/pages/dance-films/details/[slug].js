@@ -1,0 +1,66 @@
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import clsx from "clsx";
+import Image from "next/image";
+import danceFilmsData from "@/data/dance-films/details";
+import styles from "@/styles/Performances.module.scss";
+
+
+export default function DanceFilmsItemDetails() {
+    const router = useRouter();
+    const { slug } = router.query;
+
+    const [data, setData] = useState(null);
+
+    useEffect(() => {
+        setData(danceFilmsData[slug]);
+    }, [slug]);
+
+    if (!data) return (<></>);
+    
+    return (
+        <div className={styles.container}>
+            <div className={clsx(styles.content, styles.contentDetails)}>
+                <h1>{data.title}</h1>
+                {
+                    data.videos.map((item, index) => (
+                        <div key={index}>
+                            <div className={styles.videoContainer}>
+                                <iframe 
+                                    width="100%" 
+                                    height="auto" 
+                                    src={item}
+                                    title="YouTube video player" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; 
+                                        encrypted-media; gyroscope; picture-in-picture;
+                                        web-share" 
+                                    allowfullscreen
+                                >
+                                </iframe>
+                            </div>
+                            <div style={{ height: "80px" }}></div>
+                        </div>
+                    ))
+                }
+                <p>
+                    {data.description}
+                </p>
+                <br />
+                <p>
+                    {data.credits}
+                </p>
+                <div style={{height: "100px"}}></div>
+                <div className={styles.imageGallery}>
+                    {
+                        data.images.map((item, index) => (
+                            <div key={index} className={styles.imageContainer}>
+                                <Image src={item} alt="" fill/>
+                            </div>)
+                        )
+                    }
+                </div>
+            </div>
+        </div>
+    );
+}
