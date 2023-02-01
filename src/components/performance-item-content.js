@@ -5,7 +5,8 @@ export function PerformanceItemContent({ content, title, detailsUrl }) {
     const route = useRouter();
 
     const handleViewMore = () => {
-        route.push(detailsUrl);
+        if (detailsUrl)
+            route.push(detailsUrl);
     };
 
     return (
