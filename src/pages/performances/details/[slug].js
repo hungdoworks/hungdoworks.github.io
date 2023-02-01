@@ -14,7 +14,7 @@ export default function PerformanceItemDetails() {
 
     useEffect(() => {
         setData(performanceData[slug]);
-    }, [slug]);
+    }, []);
 
     if (!data) return (<></>);
     
@@ -63,4 +63,10 @@ export default function PerformanceItemDetails() {
             </div>
         </div>
     );
+}
+
+export async function getServerSideProps(context) {
+    return {
+        props: {},
+    };
 }
