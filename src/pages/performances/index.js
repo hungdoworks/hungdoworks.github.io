@@ -36,6 +36,7 @@ export default function PerformancesPage() {
                                     </span>
                                 </>                            
                             }
+                            detailsUrl="/performances/details/tam-sinh"
                         />
                         <PerformanceItemImage src="/images/perf_tam_sinh.jpg" />
                     </PerformanceItem>
@@ -50,6 +51,7 @@ export default function PerformancesPage() {
                                     <span>L'EGO is a co-creation with influences from contemporary dance, hip hop and jazz theater. There is talk of beauty, identity and individual people, of subtle connections, emotional exchange and the many colours and shades of every moment of life.</span>
                                 </>                            
                             }
+                            detailsUrl="/performances/details/l-ego"
                         />
                     </PerformanceItem>
                     {/* <PerformanceItem>
