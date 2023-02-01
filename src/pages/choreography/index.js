@@ -17,6 +17,7 @@ export default function ChoreographyPage() {
                             content={
                                 <span>When the apricots are ripe and the plums are still on the tree</span>
                             }
+                            detailsUrl="/choreography/details/plum-apricot"
                         />
                     </PerformanceItem>
                     <PerformanceItem>
@@ -29,6 +30,7 @@ export default function ChoreographyPage() {
                                     </span>
                                 </>                            
                             }
+                            detailsUrl="/choreography/details/whisper-wind-water"
                         />
                         <PerformanceItemImage src="/images/choreo_whisper_wind_water.jpg" />
                     </PerformanceItem>
@@ -41,6 +43,7 @@ export default function ChoreographyPage() {
                                     <span>Simulate a simple practice session in a contemporary dance class but with a spirit of fun and improvisation.</span>
                                 </>                            
                             }
+                            detailsUrl="/choreography/details/the-rehearsal"
                         />
                     </PerformanceItem>
                 </div>
