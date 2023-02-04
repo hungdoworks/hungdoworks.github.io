@@ -5,14 +5,7 @@ import { NavDropdown, NavDropdownItem } from "./nav-dropdown";
 const NavigationData = [
     {title: "Home", url: "/"},
     {title: "Works", url: "/works"},
-    // {title: "Performance", url: "/performances",
-    //     sub: [
-    //         { title: <span>A <span style={{wordSpacing: "-10px"}}>Wo │ man</span></span>, url: "/" },
-    //         { title: "L'ego", url: "/" },
-    //         { title: "Cramped", url: "/" },
-    //     ]
-    // },
-    {title: "Workshops", url: "/"},
+    {title: "Workshops", url: "/workshops"},
     {title: "Others", url: "/"},
     {title: "Contact", url: "/"},
 ];
