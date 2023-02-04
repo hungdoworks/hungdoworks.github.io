@@ -19,7 +19,7 @@ export default function WorkshopPage() {
                                     “I was so impressed, full of fun to have the opportunity to know such a dedicated workshop! Thank you is definitely not enough to express the appreciation I am feeling. Come to really touch the emotions, will definitely come back and continue to stick together” – Thanh Mai
                                 </>                            
                             }
-                            // detailsUrl="/performances/details/l-ego"
+                            detailsUrl="/workshops/details/release-and-connect"
                         />
                     </PerformanceItem>
                     <PerformanceItem>
@@ -31,7 +31,7 @@ export default function WorkshopPage() {
                                     – Nhất Phu
                                 </>                            
                             }
-                            // detailsUrl="/performances/details/tam-sinh"
+                            detailsUrl="/workshops/details/connect-and-creative"
                         />
                         <PerformanceItemImage src="/images/workshop-saigon.jpg" />
                     </PerformanceItem>
