@@ -7,7 +7,7 @@ const NavigationData = [
     {title: "Works", url: "/works"},
     {title: "Workshops", url: "/workshops"},
     {title: "Others", url: "/others"},
-    {title: "Contact", url: "/"},
+    {title: "Contact", url: "/contact"},
 ];
 
 

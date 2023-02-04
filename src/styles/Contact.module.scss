@@ -1,0 +1,36 @@
+.container {
+    padding: 40px 40px 60px 40px;
+    background: #000;
+}
+
+.content {
+    & > h1 {
+        font-size: 60px;
+        color: #fff;
+        margin-bottom: 60px;
+    }
+
+    & .gridInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+
+        & p {
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        & .imageContainer {
+            position: relative;
+            height: 500px;
+    
+            & img {
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+    }
+}
