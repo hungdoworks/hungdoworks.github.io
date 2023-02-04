@@ -6,7 +6,7 @@ const NavigationData = [
     {title: "Home", url: "/"},
     {title: "Works", url: "/works"},
     {title: "Workshops", url: "/workshops"},
-    {title: "Others", url: "/"},
+    {title: "Others", url: "/others"},
     {title: "Contact", url: "/"},
 ];
 

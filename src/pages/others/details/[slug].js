@@ -2,18 +2,18 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
-import workshopData from "@/data/workshops/details";
+import othersData from "@/data/others/details";
 import styles from "@/styles/Performances.module.scss";
 
 
-export default function WorkshopItemDetails() {
+export default function OthersItemDetails() {
     const router = useRouter();
     const { slug } = router.query;
 
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        setData(workshopData[slug]);
+        setData(othersData[slug]);
     }, []);
 
     if (!data) return (<></>);
