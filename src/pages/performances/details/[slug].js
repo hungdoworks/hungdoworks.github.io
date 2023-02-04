@@ -64,9 +64,3 @@ export default function PerformanceItemDetails() {
         </div>
     );
 }
-
-export async function getServerSideProps(context) {
-    return {
-        props: {},
-    };
-}
