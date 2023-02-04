@@ -64,3 +64,22 @@ export default function PerformanceItemDetails() {
         </div>
     );
 }
+
+export async function getStaticPaths() {
+    return {
+        paths: [
+            { params: { slug: 'a-woman' } }, 
+            { params: { slug: 'l-ego' } },
+            { params: { slug: 'tam-sinh' } },
+        ],
+        fallback: false, // can also be true or 'blocking'
+    }
+  }
+
+export async function getStaticProps({ params }) {
+    return {
+        props: {
+
+        }, // will be passed to the page component as props
+    }
+}
