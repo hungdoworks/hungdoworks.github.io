@@ -14,7 +14,7 @@
         object-position: center 120px;
         transform: scale(1.5, 1.5);
         opacity: 0;
-        animation: fadeIn 2s ease-in 0.5s forwards, fadeOut 2s ease-in 4s forwards;
+        animation: fadeIn 2s ease-in 0.5s forwards, fadeOut 2s ease-in 3.5s forwards;
     }
 }
 
@@ -25,7 +25,7 @@
     color: #fff;
     transform: translate(0, -40px);
     opacity: 0;
-    animation: fadeIn 2s ease-in 3s forwards;
+    animation: fadeIn 2s ease-in 2s forwards;
 
     & > p {
         font-size: 60px;
@@ -42,7 +42,7 @@
     bottom: 30px;
     left: 0;
     opacity: 0;
-    animation: fadeIn 2s ease-in 4s forwards;
+    animation: fadeIn 2s ease-in 3.5s forwards;
 
     & > p {
         text-align: justify;
