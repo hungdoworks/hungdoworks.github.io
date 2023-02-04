@@ -5,7 +5,7 @@
 .content {
     position: relative;
     margin: auto;
-    width: 900px;
+    width: 1000px;
     height: 650px;
     overflow: hidden;
 
@@ -14,7 +14,7 @@
         object-position: center 120px;
         transform: scale(1.5, 1.5);
         opacity: 0;
-        animation: fadeIn 2s ease-in 0.5s forwards;
+        animation: fadeIn 2s ease-in 0.5s forwards, fadeOut 2s ease-in 4s forwards;
     }
 }
 
@@ -37,7 +37,29 @@
     }
 }
 
+.info {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in 4s forwards;
+
+    & > p {
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        color: #fff;
+    }
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
 }
