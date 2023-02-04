@@ -1,6 +1,6 @@
+import WorkList from "@/components/work-list";
+import WorkListItem from "@/components/work-list-item";
 import styles from "@/styles/Works.module.scss";
-import Image from "next/image";
-import { useRouter } from "next/router";
 
 export default function WorksPage() {
     return (
@@ -24,33 +24,6 @@ export default function WorksPage() {
                     />
                 </WorkList>
             </div>
-        </div>
-    );
-}
-
-function WorkList({children}) {
-    return (
-        <div className={styles.workList}>
-            {children}
-        </div>
-    );
-}
-
-function WorkListItem({title, imgSrc, url}) {
-    const router = useRouter();
-
-    const handleClick = () => {
-        if (url) {
-            router.push(url);
-        }
-    };
-
-    return (
-        <div className={styles.workListItem} onClick={handleClick}>
-            <div className={styles.workListItemImage}>
-                <Image src={imgSrc} alt="" fill priority/>
-            </div>
-            <p className={styles.workListItemText}>{title}</p>
         </div>
     );
 }
