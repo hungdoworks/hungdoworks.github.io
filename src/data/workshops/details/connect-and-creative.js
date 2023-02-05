@@ -1,13 +1,19 @@
+import img0 from "../../../../public/images/workshops/connect-and-creative/img_0.jpg";
+import img1 from "../../../../public/images/workshops/connect-and-creative/img_1.jpg";
+import img2 from "../../../../public/images/workshops/connect-and-creative/img_2.webp";
+import img3 from "../../../../public/images/workshops/connect-and-creative/img_3.webp";
+import img4 from "../../../../public/images/workshops/connect-and-creative/img_4.webp";
+
 const title = "Workshop “Connect and be creative” through Contemporary Dance";
 
 const videos = [];
 
 const images = [
-    "/images/workshops/connect-and-creative/img_0.jpg",
-    "/images/workshops/connect-and-creative/img_1.jpg",
-    "/images/workshops/connect-and-creative/img_2.webp",
-    "/images/workshops/connect-and-creative/img_3.webp",
-    "/images/workshops/connect-and-creative/img_4.webp",
+    img0,
+    img1,
+    img2,
+    img3,
+    img4,
 ];
 
 const description = <>

@@ -1,24 +1,42 @@
+import img0 from "../../../../public/images/performances/tam_sinh/img_0.jpg";
+import img1 from "../../../../public/images/performances/tam_sinh/img_1.jpg";
+import img2 from "../../../../public/images/performances/tam_sinh/img_2.jpg";
+import img3 from "../../../../public/images/performances/tam_sinh/img_3.jpg";
+import img4 from "../../../../public/images/performances/tam_sinh/img_4.jpg";
+import img5 from "../../../../public/images/performances/tam_sinh/img_5.jpg";
+import img6 from "../../../../public/images/performances/tam_sinh/img_6.jpg";
+import img7 from "../../../../public/images/performances/tam_sinh/img_7.jpg";
+import img8 from "../../../../public/images/performances/tam_sinh/img_8.jpg";
+import img9 from "../../../../public/images/performances/tam_sinh/img_9.jpg";
+import img10 from "../../../../public/images/performances/tam_sinh/img_10.jpg";
+import img11 from "../../../../public/images/performances/tam_sinh/img_11.jpg";
+import img12 from "../../../../public/images/performances/tam_sinh/img_12.jpg";
+import img13 from "../../../../public/images/performances/tam_sinh/img_13.jpg";
+import img14 from "../../../../public/images/performances/tam_sinh/img_14.jpg";
+import img15 from "../../../../public/images/performances/tam_sinh/img_15.jpg";
+
+
 const title = "Tam Sinh";
 
 const videos = [];
 
 const images = [
-    "/images/performances/tam_sinh/img_0.jpg",
-    "/images/performances/tam_sinh/img_1.jpg",
-    "/images/performances/tam_sinh/img_2.jpg",
-    "/images/performances/tam_sinh/img_3.jpg",
-    "/images/performances/tam_sinh/img_4.jpg",
-    "/images/performances/tam_sinh/img_5.jpg",
-    "/images/performances/tam_sinh/img_6.jpg",
-    "/images/performances/tam_sinh/img_7.jpg",
-    "/images/performances/tam_sinh/img_8.jpg",
-    "/images/performances/tam_sinh/img_9.jpg",
-    "/images/performances/tam_sinh/img_10.jpg",
-    "/images/performances/tam_sinh/img_11.jpg",
-    "/images/performances/tam_sinh/img_12.jpg",
-    "/images/performances/tam_sinh/img_13.jpg",
-    "/images/performances/tam_sinh/img_14.jpg",
-    "/images/performances/tam_sinh/img_15.jpg",
+    img0,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
 ];
 
 const description = <>

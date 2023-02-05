@@ -3,6 +3,8 @@ import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
 
+import imgResonanceCamp from "../../../public/images/films_resonance_camp.jpg";
+
 export default function DanceFilmsPage() {
 
     return (
@@ -11,7 +13,7 @@ export default function DanceFilmsPage() {
                 <h1>Dance Films</h1>
                 <div className={styles.performanceList}>
                     <PerformanceItem>
-                        <PerformanceItemImage src="/images/films_resonance_camp.jpg" />
+                        <PerformanceItemImage src={imgResonanceCamp} />
                         <PerformanceItemContent
                             title={"Resonance - Improvised Dance & Music Camp"}
                             content={

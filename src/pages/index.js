@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
+import imgBgHome from "../../public/images/bg_home.jpg";
 
 export default function Home() {
   const textAWoman = <span>A <span style={{wordSpacing: "-12px"}}>Wo │ man</span></span>;
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <Image src="/images/bg_home.jpg" alt="" fill placeholder="blur" />
+        <Image src={imgBgHome} alt="" fill placeholder="blur" />
         <div className={styles.title}>
           <p>Minh Hai</p>
           <p>Dancer | Performer</p>

@@ -7,7 +7,7 @@ export default function WorkListItem({title, imgSrc, url}) {
         <Link href={url}>
             <div className={styles.workListItem}>
                 <div className={styles.workListItemImage}>
-                    <Image src={imgSrc} alt="" fill placeholder="blur" />
+                    <Image src={imgSrc} alt="" fill placeholder="blur"/>
                 </div>
                 <p className={styles.workListItemText}>{title}</p>
             </div>

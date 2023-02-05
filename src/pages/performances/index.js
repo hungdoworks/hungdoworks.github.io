@@ -3,6 +3,10 @@ import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
 
+import imgAWoman from "../../../public/images/perf_a_woman.jpg";
+import imgTamSinh from "../../../public/images/perf_tam_sinh.jpg";
+import imgLego from "../../../public/images/perf_l_ego.jpg";
+
 export default function PerformancesPage() {
     const titleAWoman = <span>A <span style={{wordSpacing: "-24px"}}>Wo │ man</span></span>;
     const textAWoman = <span>A <span style={{wordSpacing: "-12px"}}>Wo │ man</span></span>;
@@ -13,7 +17,7 @@ export default function PerformancesPage() {
                 <h1>Performances</h1>
                 <div className={styles.performanceList}>
                     <PerformanceItem>
-                        <PerformanceItemImage src="/images/perf_a_woman.jpg" />
+                        <PerformanceItemImage src={imgAWoman} />
                         <PerformanceItemContent
                             title={titleAWoman}
                             content={
@@ -38,10 +42,10 @@ export default function PerformancesPage() {
                             }
                             detailsUrl="/performances/details/tam-sinh"
                         />
-                        <PerformanceItemImage src="/images/perf_tam_sinh.jpg" />
+                        <PerformanceItemImage src={imgTamSinh} />
                     </PerformanceItem>
                     <PerformanceItem>
-                        <PerformanceItemImage src="/images/perf_l_ego.jpg" />
+                        <PerformanceItemImage src={imgLego} />
                         <PerformanceItemContent 
                             title="L'ego"
                             content={
