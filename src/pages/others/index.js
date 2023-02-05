@@ -3,6 +3,9 @@ import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
 
+import imgCatWalk from "../../../public/images/film_cat_walk.png";
+import imgXinHayNhinEm from "../../../public/images/film_xin_hay_nhin_em.png";
+
 export default function OthersPage() {
 
     return (
@@ -11,7 +14,7 @@ export default function OthersPage() {
                 <h1>Others</h1>
                 <div className={styles.performanceList}>
                     <PerformanceItem>
-                        <PerformanceItemImage src="/images/film_cat_walk.png" />
+                        <PerformanceItemImage src={imgCatWalk} />
                         <PerformanceItemContent 
                             title="“Catwalk” - Music video"
                             content={
@@ -32,7 +35,7 @@ export default function OthersPage() {
                             }
                             detailsUrl="/others/details/xin-hay-nhin-em"
                         />
-                        <PerformanceItemImage src="/images/film_xin_hay_nhin_em.png" />
+                        <PerformanceItemImage src={imgXinHayNhinEm} />
                     </PerformanceItem>
                 </div>
             </div>

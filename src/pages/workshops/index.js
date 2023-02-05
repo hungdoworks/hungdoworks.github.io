@@ -3,6 +3,9 @@ import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
 
+import imgWorkshopNGO from "../../../public/images/workshop-ngo.png";
+import imgWorkshopSaiGon from "../../../public/images/workshop-saigon.jpg";
+
 export default function WorkshopPage() {
 
     return (
@@ -11,7 +14,7 @@ export default function WorkshopPage() {
                 <h1>Workshops</h1>
                 <div className={styles.performanceList}>
                     <PerformanceItem>
-                        <PerformanceItemImage src="/images/workshop-ngo.png" />
+                        <PerformanceItemImage src={imgWorkshopNGO} />
                         <PerformanceItemContent 
                             title="“Release and Connect” for NGO"
                             content={
@@ -33,7 +36,7 @@ export default function WorkshopPage() {
                             }
                             detailsUrl="/workshops/details/connect-and-creative"
                         />
-                        <PerformanceItemImage src="/images/workshop-saigon.jpg" />
+                        <PerformanceItemImage src={imgWorkshopSaiGon} />
                     </PerformanceItem>
                 </div>
             </div>

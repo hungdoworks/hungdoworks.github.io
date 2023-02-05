@@ -55,7 +55,7 @@ export default function OthersItemDetails() {
                     {
                         data.images.map((item, index) => (
                             <div key={index} className={styles.imageContainer}>
-                                <Image src={item} alt="" fill placeholder="blur" />
+                                <Image src={item} alt="" fill />
                             </div>)
                         )
                     }

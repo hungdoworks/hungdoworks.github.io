@@ -3,6 +3,10 @@ import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
 
+import imgPlumApricot from "../../../public/images/choreo_plum_apricot.jpg";
+import imgWhisperWindWater from "../../../public/images/choreo_whisper_wind_water.jpg";
+import imgTheRehearsal from "../../../public/images/choreo_the_rehearsal.jpg";
+
 export default function ChoreographyPage() {
 
     return (
@@ -11,7 +15,7 @@ export default function ChoreographyPage() {
                 <h1>Choreography</h1>
                 <div className={styles.performanceList}>
                     <PerformanceItem>
-                        <PerformanceItemImage src="/images/choreo_plum_apricot.jpg" />
+                        <PerformanceItemImage src={imgPlumApricot} />
                         <PerformanceItemContent
                             title={"Mơ mận (Plum Apricot)"}
                             content={
@@ -32,10 +36,10 @@ export default function ChoreographyPage() {
                             }
                             detailsUrl="/choreography/details/whisper-wind-water"
                         />
-                        <PerformanceItemImage src="/images/choreo_whisper_wind_water.jpg" />
+                        <PerformanceItemImage src={imgWhisperWindWater} />
                     </PerformanceItem>
                     <PerformanceItem>
-                        <PerformanceItemImage src="/images/choreo_the_rehearsal.jpg" />
+                        <PerformanceItemImage src={imgTheRehearsal} />
                         <PerformanceItemContent 
                             title="Phòng Tập (The Rehearsal)"
                             content={
