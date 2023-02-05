@@ -1,18 +1,12 @@
 import styles from "@/styles/components/NavDropdown.module.scss";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 export function NavDropdown({children, title, titleUrl}) {
-    const router = useRouter();
-
-    const handleTitleClick = () => {
-        if (titleUrl) {
-            router.push(titleUrl);
-        }
-    };
-
     return (
         <div className={styles.dropdown}>
-            <button className={styles.dropbtn} onClick={handleTitleClick}>{title}</button>
+            <Link href={titleUrl}>
+                <div className={styles.dropbtn}>{title}</div>
+            </Link>
             <div className={styles.dropdownContent}>
                 {children}
             </div>
@@ -21,5 +15,5 @@ export function NavDropdown({children, title, titleUrl}) {
 }
 
 export function NavDropdownItem({title, url}) {
-    return <a href={url}>{title}</a>
+    return <Link href={url}>{title}</Link>
 }
