@@ -14,7 +14,7 @@ export default function PerformanceItemDetails() {
 
     useEffect(() => {
         setData(performanceData[slug]);
-    }, [slug]);
+    }, []);
 
     if (!data) return (<></>);
     
@@ -55,7 +55,7 @@ export default function PerformanceItemDetails() {
                     {
                         data.images.map((item, index) => (
                             <div key={index} className={styles.imageContainer}>
-                                <Image src={item} alt="" fill priority/>
+                                <Image src={item} alt="" fill />
                             </div>)
                         )
                     }
@@ -63,4 +63,23 @@ export default function PerformanceItemDetails() {
             </div>
         </div>
     );
+}
+
+export async function getStaticPaths() {
+    return {
+        paths: [
+            { params: { slug: 'a-woman' } }, 
+            { params: { slug: 'l-ego' } },
+            { params: { slug: 'tam-sinh' } },
+        ],
+        fallback: false, // can also be true or 'blocking'
+    }
+  }
+
+export async function getStaticProps({ params }) {
+    return {
+        props: {
+
+        }, // will be passed to the page component as props
+    }
 }
