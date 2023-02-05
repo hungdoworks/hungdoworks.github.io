@@ -2,10 +2,6 @@ import WorkList from "@/components/work-list";
 import WorkListItem from "@/components/work-list-item";
 import styles from "@/styles/Works.module.scss";
 
-import imgPerformances from "../../../public/images/perf_a_woman.jpg";
-import imgChoreography from "../../../public/images/choreo_plum_apricot.jpg";
-import imgDanceFilms from "../../../public/images/films_resonance_camp.jpg";
-
 export default function WorksPage() {
     return (
         <div className={styles.container}>
@@ -13,17 +9,17 @@ export default function WorksPage() {
                 <WorkList>
                     <WorkListItem
                         title="Performances"
-                        imgSrc={imgPerformances}
+                        imgSrc="/images/perf_a_woman.jpg"
                         url="/performances"
                     />
                     <WorkListItem 
                         title="Choreography" 
-                        imgSrc={imgChoreography} 
+                        imgSrc="/images/choreo_plum_apricot.jpg" 
                         url="/choreography" 
                     />
                     <WorkListItem 
                         title="Dance & Film" 
-                        imgSrc={imgDanceFilms}
+                        imgSrc="/images/films_resonance_camp.jpg" 
                         url="/dance-films"
                     />
                 </WorkList>
