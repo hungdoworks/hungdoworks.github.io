@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <Image src="/images/bg_home.jpg" alt="" fill />
+        <Image src="/images/bg_home.jpg" alt="" fill placeholder="blur" />
         <div className={styles.title}>
           <p>Minh Hai</p>
           <p>Dancer | Performer</p>
