@@ -1,6 +1,14 @@
 const titleAWoman = <span>A <span style={{wordSpacing: "-42px"}}>Wo │ man</span></span>;
 const textAWoman = <span>A <span style={{wordSpacing: "-12px"}}>Wo │ man</span></span>;
 
+import img0 from "../../../../public/images/performances/a_woman/img_0.jpg";
+import img1 from "../../../../public/images/performances/a_woman/img_1.jpg";
+import img2 from "../../../../public/images/performances/a_woman/img_2.jpg";
+import img3 from "../../../../public/images/performances/a_woman/img_3.jpg";
+import img4 from "../../../../public/images/performances/a_woman/img_4.jpg";
+import img5 from "../../../../public/images/performances/a_woman/img_5.jpg";
+import img6 from "../../../../public/images/performances/a_woman/img_6.jpg";
+
 const title = titleAWoman;
 
 const videos = [
@@ -10,13 +18,13 @@ const videos = [
 ];
 
 const images = [
-    "/images/performances/a_woman/img_0.jpg",
-    "/images/performances/a_woman/img_1.jpg",
-    "/images/performances/a_woman/img_2.jpg",
-    "/images/performances/a_woman/img_3.jpg",
-    "/images/performances/a_woman/img_4.jpg",
-    "/images/performances/a_woman/img_5.jpg",
-    "/images/performances/a_woman/img_6.jpg",
+    img0,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
 ];
 
 const description = <>
