@@ -14,7 +14,7 @@ export default function WorkListItem({title, imgSrc, url}) {
     return (
         <div className={styles.workListItem} onClick={handleClick}>
             <div className={styles.workListItemImage}>
-                <Image src={imgSrc} alt="" fill priority/>
+                <Image src={imgSrc} alt="" fill />
             </div>
             <p className={styles.workListItemText}>{title}</p>
         </div>
