@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "@/styles/Works.module.scss";
+import Link from "next/link";
 
 export default function WorkListItem({title, imgSrc, url}) {
     const router = useRouter();
@@ -12,11 +13,13 @@ export default function WorkListItem({title, imgSrc, url}) {
     };
 
     return (
-        <div className={styles.workListItem} onClick={handleClick}>
-            <div className={styles.workListItemImage}>
-                <Image src={imgSrc} alt="" fill />
+        <Link href={url}>
+            <div className={styles.workListItem}>
+                <div className={styles.workListItemImage}>
+                    <Image src={imgSrc} alt="" fill />
+                </div>
+                <p className={styles.workListItemText}>{title}</p>
             </div>
-            <p className={styles.workListItemText}>{title}</p>
-        </div>
+        </Link>
     );
 }
