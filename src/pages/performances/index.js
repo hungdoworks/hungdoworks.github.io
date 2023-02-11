@@ -2,13 +2,14 @@ import styles from "@/styles/Performances.module.scss"
 import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
+import WordAWoman from "@/components/word-a-woman";
 
 import imgAWoman from "../../../public/images/perf_a_woman.jpg";
 import imgTamSinh from "../../../public/images/perf_tam_sinh.jpg";
 import imgLego from "../../../public/images/perf_l_ego.jpg";
 
 export default function PerformancesPage() {
-    const titleAWoman = <span>A <span style={{wordSpacing: "-24px"}}>Wo │ man</span></span>;
+    // const titleAWoman = <span>A <span style={{wordSpacing: "-24px"}}>Wo │ man</span></span>;
     const textAWoman = <span>A <span style={{wordSpacing: "-12px"}}>Wo │ man</span></span>;
 
     return (
@@ -19,7 +20,7 @@ export default function PerformancesPage() {
                     <PerformanceItem>
                         <PerformanceItemImage src={imgAWoman} />
                         <PerformanceItemContent
-                            title={titleAWoman}
+                            title={<WordAWoman />}
                             content={
                                 <span>
                                     “{textAWoman}" is a contemporary dance play within the Goethe Institute's Antigone project (calling for innovative performances based on Sophocles' classic Greek play Antigone) was choreographed by Minh Hai and Hoang Ha. Instead of showing all philosophical layers of the original play, "{textAWoman}" focuses on looking deeper into Antigone's inner world and through this woman's journey to find the answer for the question: What can a human do when fate has been arranged? Even if it is a tragedy, how will a person proceed in the journey to her own foreknown death?
