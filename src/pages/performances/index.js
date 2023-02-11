@@ -9,8 +9,6 @@ import imgTamSinh from "../../../public/images/perf_tam_sinh.jpg";
 import imgLego from "../../../public/images/perf_l_ego.jpg";
 
 export default function PerformancesPage() {
-    // const titleAWoman = <span>A <span style={{wordSpacing: "-24px"}}>Wo │ man</span></span>;
-    const textAWoman = <span>A <span style={{wordSpacing: "-12px"}}>Wo │ man</span></span>;
 
     return (
         <div className={styles.container}>
@@ -23,7 +21,7 @@ export default function PerformancesPage() {
                             title={<WordAWoman />}
                             content={
                                 <span>
-                                    “{textAWoman}" is a contemporary dance play within the Goethe Institute's Antigone project (calling for innovative performances based on Sophocles' classic Greek play Antigone) was choreographed by Minh Hai and Hoang Ha. Instead of showing all philosophical layers of the original play, "{textAWoman}" focuses on looking deeper into Antigone's inner world and through this woman's journey to find the answer for the question: What can a human do when fate has been arranged? Even if it is a tragedy, how will a person proceed in the journey to her own foreknown death?
+                                    “{<WordAWoman />}" is a contemporary dance play within the Goethe Institute's Antigone project (calling for innovative performances based on Sophocles' classic Greek play Antigone) was choreographed by Minh Hai and Hoang Ha. Instead of showing all philosophical layers of the original play, "{<WordAWoman />}" focuses on looking deeper into Antigone's inner world and through this woman's journey to find the answer for the question: What can a human do when fate has been arranged? Even if it is a tragedy, how will a person proceed in the journey to her own foreknown death?
                                 </span>
                             }
                             detailsUrl="/performances/details/a-woman"
