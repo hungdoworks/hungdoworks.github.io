@@ -71,6 +71,7 @@ export async function getStaticPaths() {
             { params: { slug: 'a-woman' } }, 
             { params: { slug: 'l-ego' } },
             { params: { slug: 'tam-sinh' } },
+            { params: { slug: 'cramped' } },
         ],
         fallback: false, // can also be true or 'blocking'
     }
