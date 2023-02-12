@@ -3,6 +3,7 @@ import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
 import WordAWoman from "@/components/word-a-woman";
+import BackButton from "@/components/back-button";
 
 import imgAWoman from "../../../public/images/perf_a_woman.jpg";
 import imgTamSinh from "../../../public/images/perf_tam_sinh.jpg";
@@ -14,6 +15,7 @@ export default function PerformancesPage() {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
+                <BackButton url="/works" />
                 <h1>Performances</h1>
                 <div className={styles.performanceList}>
                     <PerformanceItem>
