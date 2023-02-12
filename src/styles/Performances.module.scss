@@ -64,12 +64,27 @@
         gap: 20px;
 
         & > h2 {
-            font-size: 36px;
+            font-size: 32px;
             line-height: 125%;
 
             & > a {
                 color: #fff;
-                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                    text-decoration-thickness: 2px;
+                    // &::after {
+                    //     content: ' ';
+                    //     display: inline-block;
+                    //     width: 24px;
+                    //     height: 18px;
+                    //     background: url("/icons/ic_arrow_forward.svg") no-repeat;
+                    //     background-size: cover;
+                    //     background-position: center center;
+                    //     margin-left: 8px;
+                    // }
+                }
             }
         }
 
