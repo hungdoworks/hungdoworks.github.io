@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
         <title>Minh Hai Portfolio</title>
         <meta name="description" content="Minh Hai's portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/avatar.png" />
       </Head>
       <main>
         <NavigationBar />
