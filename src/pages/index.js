@@ -12,7 +12,7 @@ export default function Home() {
         <Image src={imgBgHome} alt="" fill placeholder="blur" />
         <div className={styles.title}>
           <p>Minh Hai</p>
-          <p>Dancer | Performer</p>
+          <p>Dancer <span style={{fontFamily: "Arial, sans-serif"}}>|</span> Performer</p>
         </div>
         <div className={styles.info}>
           <p>
