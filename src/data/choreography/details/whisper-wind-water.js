@@ -8,7 +8,9 @@ import img6 from "../../../../public/images/choreography/whisper-wind-water/img_
 
 const title = "Thầm Thì Gió Nước (Whisper, Wind, Water)";
 
-const videos = [];
+const videos = [
+    "https://www.youtube.com/embed/UPtX2eYM7ns"
+];
 
 const images = [
     img0,
