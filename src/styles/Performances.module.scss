@@ -74,6 +74,8 @@
                     text-decoration: underline;
                     text-underline-offset: 4px;
                     text-decoration-thickness: 2px;
+                    
+                    // Save for later use
                     // &::after {
                     //     content: ' ';
                     //     display: inline-block;
@@ -98,6 +100,74 @@
 
         & > button {
             width: 120px;
+            height: 26px;
+            border: none;
+            background: #222;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+.performanceItemVertical {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &Image {
+        position: relative;
+        height: 500px;
+
+        & > img {
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    &Content {
+        position: relative;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & > h2 {
+            font-size: 32px;
+            line-height: 125%;
+
+            & > a {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                    text-decoration-thickness: 2px;
+                    
+                    // Save for later use
+                    // &::after {
+                    //     content: ' ';
+                    //     display: inline-block;
+                    //     width: 24px;
+                    //     height: 18px;
+                    //     background: url("/icons/ic_arrow_forward.svg") no-repeat;
+                    //     background-size: cover;
+                    //     background-position: center center;
+                    //     margin-left: 8px;
+                    // }
+                }
+            }
+        }
+
+        & > p {
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        & > button {
+            width: 240px;
             height: 26px;
             border: none;
             background: #222;
@@ -133,4 +203,9 @@
     background: #222;
     font-size: 14px;
     color: #fff;
+
+    &.large {
+        margin-top: 10px;
+        padding: 4px 80px;
+    }
 }
