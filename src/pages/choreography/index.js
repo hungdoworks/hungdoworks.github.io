@@ -41,7 +41,13 @@ export default function ChoreographyPage() {
                     <PerformanceItem>
                         <PerformanceItemImage src={imgTheRehearsal} />
                         <PerformanceItemContent 
-                            title="Phòng Tập (The Rehearsal)"
+                            title={
+                                <>
+                                    <span>Phòng Tập</span>
+                                    <br />
+                                    <span>(The Rehearsal)</span>
+                                </>
+                            }
                             content={
                                 <>
                                     <span>Simulate a simple practice session in a contemporary dance class but with a spirit of fun and improvisation.</span>
