@@ -7,12 +7,16 @@
     position: relative;
 
     & > h1 {
-        font-size: 60px;
+        font-size: 44px;
         color: #fff;
         margin-bottom: 80px;
     }
 
     &Details {
+        & > h1 {
+            margin-top: 60px;
+        }
+
         & > p {
             text-align: justify;
             font-size: 16px;
