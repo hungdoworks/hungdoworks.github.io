@@ -64,7 +64,12 @@
 
         & > h2 {
             font-size: 36px;
-            color: #fff;
+            line-height: 125%;
+
+            & > a {
+                color: #fff;
+                text-decoration: underline;
+            }
         }
 
         & > p {
