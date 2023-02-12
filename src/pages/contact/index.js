@@ -1,7 +1,7 @@
 import styles from "@/styles/Contact.module.scss"
 import Image from "next/image";
 
-import imgCramped from "../../../public/images/perf_cramped.jpg";
+import imgAvatar from "../../../public/avatar.png";
 
 export default function ContactPage() {
 
@@ -11,7 +11,7 @@ export default function ContactPage() {
                 <h1>Contact</h1>
                 <div className={styles.gridInfo}>
                     <div className={styles.imageContainer}>
-                        <Image src={imgCramped} alt="" fill placeholder="blur" />
+                        <Image src={imgAvatar} alt="" fill placeholder="blur" />
                     </div>
                     <div>
                         <p>If you have any question or inquiry, please contact directly either to Hai's personal email or Kinergie Studio 's email.</p>
