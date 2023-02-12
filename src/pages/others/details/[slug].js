@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import othersData from "@/data/others/details";
 import styles from "@/styles/Performances.module.scss";
+import BackButton from "@/components/back-button";
 
 
 export default function OthersItemDetails() {
@@ -21,6 +22,7 @@ export default function OthersItemDetails() {
     return (
         <div className={styles.container}>
             <div className={clsx(styles.content, styles.contentDetails)}>
+                <BackButton url="/others"/>
                 <h1>{data.title}</h1>
                 {
                     data.videos.map((item, index) => (

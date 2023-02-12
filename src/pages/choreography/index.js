@@ -2,6 +2,7 @@ import styles from "@/styles/Performances.module.scss"
 import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
+import BackButton from "@/components/back-button";
 
 import imgPlumApricot from "../../../public/images/choreo_plum_apricot.jpg";
 import imgWhisperWindWater from "../../../public/images/choreo_whisper_wind_water.jpg";
@@ -12,6 +13,7 @@ export default function ChoreographyPage() {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
+                <BackButton url="/works" />
                 <h1>Choreography</h1>
                 <div className={styles.performanceList}>
                     <PerformanceItem>

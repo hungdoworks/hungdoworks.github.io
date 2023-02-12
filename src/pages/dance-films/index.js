@@ -2,6 +2,7 @@ import styles from "@/styles/Performances.module.scss"
 import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
 import { PerformanceItemImage } from "@/components/performance-item-image";
+import BackButton from "@/components/back-button";
 
 import imgResonanceCamp from "../../../public/images/films_resonance_camp.jpg";
 
@@ -10,6 +11,7 @@ export default function DanceFilmsPage() {
     return (
         <div className={styles.container}>
             <div className={styles.content}>
+                <BackButton url="/works" />
                 <h1>Dance Films</h1>
                 <div className={styles.performanceList}>
                     <PerformanceItem>
