@@ -8,7 +8,7 @@ import img4 from "../../../../public/images/performances/cramped/img_4.webp";
 import img5 from "../../../../public/images/performances/cramped/img_5.webp";
 
 
-const title = "Chật (Cramped)";
+const title = "Chật (Journey of Chat)";
 
 const videos = [
     "https://www.youtube.com/embed/_OEAt9vPDEU"

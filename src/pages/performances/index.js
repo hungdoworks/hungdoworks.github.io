@@ -62,7 +62,7 @@ export default function PerformancesPage() {
                     </PerformanceItem>
                     <PerformanceItem>
                         <PerformanceItemContent 
-                            title="Chật (Cramped)"
+                            title="Chật (Journey of Chat)"
                             content={
                                 <>
                                     <span>“CHẬT 2:1:2” explores the responses of individuals and collectives within limited and narrow spaces, expressing people’s choices, struggles, the search for balance, adaptivity... CHẬT was first introduced in Kinergie Studio last December and enjoyed much of love of the audience.</span>
