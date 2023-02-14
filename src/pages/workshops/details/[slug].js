@@ -24,6 +24,14 @@ export default function WorkshopItemDetails() {
             <div className={clsx(styles.content, styles.contentDetails)}>
                 <BackButton url="/workshops"/>
                 <h1>{data.title}</h1>
+                <p>
+                    {data.description}
+                </p>
+                <br />
+                <p>
+                    {data.credits}
+                </p>
+                <div style={{height: "40px"}}></div>
                 {
                     data.videos.map((item, index) => (
                         <div key={index}>
@@ -45,14 +53,6 @@ export default function WorkshopItemDetails() {
                         </div>
                     ))
                 }
-                <p>
-                    {data.description}
-                </p>
-                <br />
-                <p>
-                    {data.credits}
-                </p>
-                <div style={{height: "100px"}}></div>
                 <div className={styles.imageGallery}>
                     {
                         data.images.map((item, index) => (
