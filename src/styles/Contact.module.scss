@@ -4,10 +4,14 @@
 }
 
 .content {
+    position: relative;
+    padding-top: 60px;
+
     & > h1 {
-        font-size: 60px;
+        font-size: 44px;
         color: #fff;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
+        margin-top: 20px;
     }
 
     & .gridInfo {
@@ -29,7 +33,7 @@
     
             & img {
                 object-fit: cover;
-                object-position: -60px center;
+                object-position: -70px center;
             }
         }
     }

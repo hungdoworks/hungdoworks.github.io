@@ -5,6 +5,8 @@ import Image from "next/image";
 import othersData from "@/data/others/details";
 import styles from "@/styles/Performances.module.scss";
 import BackButton from "@/components/back-button";
+import VideoSlider from "@/components/video-slider";
+import SingleVideo from "@/components/single-video";
 
 
 export default function OthersItemDetails() {
@@ -24,27 +26,6 @@ export default function OthersItemDetails() {
             <div className={clsx(styles.content, styles.contentDetails)}>
                 <BackButton url="/others"/>
                 <h1>{data.title}</h1>
-                {
-                    data.videos.map((item, index) => (
-                        <div key={index}>
-                            <div className={styles.videoContainer}>
-                                <iframe 
-                                    width="100%" 
-                                    height="auto" 
-                                    src={item}
-                                    title="YouTube video player" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; 
-                                        encrypted-media; gyroscope; picture-in-picture;
-                                        web-share" 
-                                    allowfullscreen
-                                >
-                                </iframe>
-                            </div>
-                            <div style={{ height: "80px" }}></div>
-                        </div>
-                    ))
-                }
                 <p>
                     {data.description}
                 </p>
@@ -52,7 +33,18 @@ export default function OthersItemDetails() {
                 <p>
                     {data.credits}
                 </p>
-                <div style={{height: "100px"}}></div>
+                <div style={{height: "40px"}}></div>
+                {
+                    data.videos.length > 0 &&
+                    <>
+                        {
+                            data.videos.length > 1
+                                ? <VideoSlider source={data.videos}/>
+                                : <SingleVideo url={data.videos[0]}/>
+                        }
+                    </>
+                }
+                <div style={{ height: "40px" }}></div>
                 <div className={styles.imageGallery}>
                     {
                         data.images.map((item, index) => (
@@ -72,6 +64,7 @@ export async function getStaticPaths() {
         paths: [
             { params: { slug: 'cat-walk' } }, 
             { params: { slug: 'xin-hay-nhin-em' } },
+            { params: { slug: 'in-the-banana-forest' } },
         ],
         fallback: false, // can also be true or 'blocking'
     }

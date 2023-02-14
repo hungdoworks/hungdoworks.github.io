@@ -4,6 +4,7 @@ import { PerformanceItemVerticalContent } from "@/components/performance-item-ve
 
 import imgCatWalk from "../../../public/images/film_cat_walk.png";
 import imgXinHayNhinEm from "../../../public/images/film_xin_hay_nhin_em.png";
+import imgBananaForest from "../../../public/images/others_banana_forest.jpg";
 
 export default function OthersPage() {
 
@@ -34,6 +35,18 @@ export default function OthersPage() {
                                 </>                            
                             }
                             detailsUrl="/others/details/xin-hay-nhin-em"
+                        />
+                    </PerformanceItemVertical>
+                    <PerformanceItemVertical>
+                        <PerformanceItemVerticalContent 
+                            title="In The Banana Forest"
+                            imgSrc={imgBananaForest}
+                            content={
+                                <>
+                                    Inspired by the esthetic of painter Nguyen Gia Tri lacquer painting and the story in the banana trees in Nguyen Tuan novel “Echo and Shadow Upon a Time” (Vang Bong Mot Thoi)." Seven dancers are performing between the banana trees in a Butoh manner. They will blend in to be a part of nature, like wandering souls or just like the dried banana leaves in the garden. You can hear cutting pieces of a sonar, silent, than the sound of the banana forest.
+                                </>                            
+                            }
+                            detailsUrl="/others/details/in-the-banana-forest"
                         />
                     </PerformanceItemVertical>
                 </div>
