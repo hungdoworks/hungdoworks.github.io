@@ -5,6 +5,8 @@ import Image from "next/image";
 import choreographyData from "@/data/choreography/details";
 import styles from "@/styles/Performances.module.scss";
 import BackButton from "@/components/back-button";
+import SingleVideo from "@/components/single-video";
+import VideoSlider from "@/components/video-slider";
 
 
 export default function ChoreographyItemDetails() {
@@ -33,26 +35,16 @@ export default function ChoreographyItemDetails() {
                 </p>
                 <div style={{height: "40px"}}></div>
                 {
-                    data.videos.map((item, index) => (
-                        <div key={index}>
-                            <div className={styles.videoContainer}>
-                                <iframe 
-                                    width="100%" 
-                                    height="auto" 
-                                    src={item}
-                                    title="YouTube video player" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; 
-                                        encrypted-media; gyroscope; picture-in-picture;
-                                        web-share" 
-                                    allowfullscreen
-                                >
-                                </iframe>
-                            </div>
-                            <div style={{ height: "80px" }}></div>
-                        </div>
-                    ))
+                    data.videos.length > 0 &&
+                    <>
+                        {
+                            data.videos.length > 1
+                                ? <VideoSlider source={data.videos}/>
+                                : <SingleVideo url={data.videos[0]}/>
+                        }
+                    </>
                 }
+                <div style={{ height: "40px" }}></div>
                 <div className={styles.imageGallery}>
                     {
                         data.images.map((item, index) => (
