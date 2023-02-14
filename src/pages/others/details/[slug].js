@@ -72,6 +72,7 @@ export async function getStaticPaths() {
         paths: [
             { params: { slug: 'cat-walk' } }, 
             { params: { slug: 'xin-hay-nhin-em' } },
+            { params: { slug: 'in-the-banana-forest' } },
         ],
         fallback: false, // can also be true or 'blocking'
     }
