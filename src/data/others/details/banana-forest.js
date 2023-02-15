@@ -5,7 +5,9 @@ import img3 from "../../../../public/images/others/banana-forest/img_3.jpg";
 
 const title = "In The Banana Forest";
 
-const videos = [];
+const videos = [
+    "https://www.youtube.com/embed/I_I7a3T33U8"
+];
 
 const images = [
     img0,
