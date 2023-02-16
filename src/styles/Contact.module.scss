@@ -1,5 +1,5 @@
 .container {
-    padding: 40px 40px 60px 40px;
+    padding: 40px 20px 60px;
     background: #000;
 }
 
@@ -10,8 +10,7 @@
     & > h1 {
         font-size: 44px;
         color: #fff;
-        margin-bottom: 40px;
-        margin-top: 20px;
+        margin: 20px 0 40px 0;
     }
 
     & .gridInfo {
@@ -51,7 +50,7 @@
                 position: relative;
                 width: 200px;
                 height: 200px;
-                margin: 0 auto 30px;
+                margin: 0 auto 20px;
                 border: 1px solid #000;
                 border-radius: 50%;
                 overflow: hidden;
