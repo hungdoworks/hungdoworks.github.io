@@ -85,7 +85,8 @@
     }
 
     .title {
-        transform: translate(20px, -42px);
+        padding: 0 20px;
+        top: 364px;
 
         & > p {
             font-size: 40px;
@@ -98,7 +99,7 @@
     }
 
     .info {
-        top: 58vh;
+        top: 414px;
         padding: 0 20px;
 
         & > p {
