@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import NavigationBar from '@/components/nav-bar'
-import SideNav from '@/components/side-nav'
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
@@ -14,9 +13,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <main>
         <NavigationBar />
-        <SideNav>
-          <Component {...pageProps} />  
-        </SideNav>
+        <Component {...pageProps} />  
       </main>
     </>
   )
