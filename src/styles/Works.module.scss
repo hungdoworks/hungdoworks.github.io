@@ -54,3 +54,22 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .workList {
+        gap: 30px;
+
+        &Item {
+            height: 220px;
+
+            & > p {
+                font-size: 22px;
+            }
+        }
+    }
+}
