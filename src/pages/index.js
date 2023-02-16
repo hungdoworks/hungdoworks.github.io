@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <Image src={imgBgHome} alt="" fill placeholder="blur" />
+        <div className={styles.background}>
+          <Image src={imgBgHome} alt="" fill placeholder="blur" />
+        </div>
         <div className={styles.title}>
           <p>Minh Hai</p>
           <p>Dancer <span style={{fontFamily: "Arial, sans-serif"}}>|</span> Performer</p>

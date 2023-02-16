@@ -8,6 +8,11 @@
     width: 1000px;
     height: 650px;
     overflow: hidden;
+}
+
+.background {
+    position: relative;
+    height: 100%;
 
     & > img {
         object-fit: cover;
@@ -15,7 +20,7 @@
         transform: scale(1.5, 1.5);
         opacity: 0;
         animation: fadeIn 2s ease-in 0.5s forwards, fadeOut 2s ease-in 3.5s forwards;
-    }
+    }    
 }
 
 .title {
@@ -62,4 +67,37 @@
 @keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0.5; }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .background {
+        height: 650px;
+    }
+
+    .title {
+        transform: translate(20px, 0);
+
+        & > p {
+            font-size: 40px;
+        }
+
+        & > p + p {
+            font-size: 16px;
+            letter-spacing: 8px;
+        }
+    }
+
+    .info {
+        top: 60vh;
+        padding: 0 20px;
+
+        & > p {
+            font-size: 16px;
+        }
+    }
 }
