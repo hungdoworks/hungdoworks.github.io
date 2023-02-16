@@ -22,7 +22,7 @@ export default function SideNavigation({ children }) {
     return (
         <>
             <div className={styles.sideNav} ref={sideNavRef}>
-                <Link href="#" className={styles.closeBtn} onClick={closeNav}>&times;</Link>
+                <button className={styles.closeBtn} onClick={closeNav}>&times;</button>
                 <Link href="/" onClick={closeNav}>Home</Link>
                 <Link href="/works" onClick={closeNav}>Works</Link>
                 <Link href="/workshops" onClick={closeNav}>Workshops</Link>
