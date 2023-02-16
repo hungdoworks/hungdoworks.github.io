@@ -1,10 +1,16 @@
 .backButton {
-    &:hover {
-        &::after {
-            content: 'Back';
-            display: inline-block;
-            color: #fff;
-            transform: translate(6px, -6px);
+
+}
+
+@media only screen and (min-width: 992px) {
+    .backButton {
+        &:hover {
+            &::after {
+                content: 'Back';
+                display: inline-block;
+                color: #fff;
+                transform: translate(6px, -6px);
+            }
         }
     }
 }
