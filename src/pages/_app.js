@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
         <title>Minh Hai Portfolio</title>
         <meta name="description" content="Minh Hai's portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="/images/performances/tam_sinh/img_2.jpg" />
         <link rel="icon" href="/avatar.png" />
       </Head>
       <main>
