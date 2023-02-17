@@ -237,3 +237,15 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .performanceItemVertical {
+        &Image {
+            height: 220px;
+        }
+
+        &Content {
+            padding: 0;
+        }
+    }
+}
