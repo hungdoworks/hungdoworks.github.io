@@ -6,7 +6,7 @@
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 2;
     /* Stay on top */
     top: 0;
     /* Stay at the top */
@@ -37,8 +37,13 @@
 }
 
 .sideNavBar {
+    position: fixed;
+    width: 100%;
     display: none;
     padding-left: 5px;
+    padding-top: 5px;
+    background: #111;
+    z-index: 1;
 }
 
 /* Position and style the close button (top right corner) */
@@ -48,11 +53,14 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    border: none;
+    background: none;
+    color: #fff;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 .pageContent {
-    transition: margin-left .5s;
+    transition: transform .5s;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

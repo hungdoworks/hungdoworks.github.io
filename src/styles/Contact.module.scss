@@ -1,5 +1,5 @@
 .container {
-    padding: 40px 40px 60px 40px;
+    padding: 40px 20px 60px;
     background: #000;
 }
 
@@ -10,8 +10,7 @@
     & > h1 {
         font-size: 44px;
         color: #fff;
-        margin-bottom: 40px;
-        margin-top: 20px;
+        margin: 20px 0 40px 0;
     }
 
     & .gridInfo {
@@ -37,4 +36,31 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        padding-top: 70px;
+        
+        .gridInfo {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            & .imageContainer {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto 20px;
+                border: 1px solid #000;
+                border-radius: 50%;
+                overflow: hidden;
+        
+                & img {
+                    object-fit: cover;
+                    object-position: center center;
+                    scale: 1.4;
+                }
+            }
+        }
+    }   
 }

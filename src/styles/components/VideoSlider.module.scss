@@ -1,0 +1,53 @@
+.videoSlider {
+    display: flex;
+    align-items: center;
+
+    &Content {
+        display: flex;
+        width: 1000px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    &Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #333;
+        border-radius: 24px;
+        background: #333;
+
+        &:active {
+            background: #666;
+        }
+    }
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 4px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #666;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+    &.active {
+        background-color: #fff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .videoSlider {
+        &Content {
+            width: 300px;
+        }
+
+        &Button {
+            scale: 0.65;
+        }
+    }
+}

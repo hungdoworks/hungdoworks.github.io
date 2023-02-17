@@ -7,6 +7,7 @@ import styles from "@/styles/Performances.module.scss";
 import BackButton from "@/components/back-button";
 import VideoSlider from "@/components/video-slider";
 import SingleVideo from "@/components/single-video";
+import SideNavigation from "@/components/side-nav";
 
 
 export default function PerformanceItemDetails() {
@@ -22,40 +23,42 @@ export default function PerformanceItemDetails() {
     if (!data) return (<></>);
     
     return (
-        <div className={styles.container}>
-            <div className={clsx(styles.content, styles.contentDetails)}>
-                <BackButton url="/performances"/>
-                <h1>{data.title}</h1>
-                <p>
-                    {data.description}
-                </p>
-                <br />
-                <p>
-                    {data.credits}
-                </p>
-                <div style={{height: "40px"}}></div>
-                {
-                    data.videos.length > 0 &&
-                    <>
-                        {
-                            data.videos.length > 1
-                                ? <VideoSlider source={data.videos}/>
-                                : <SingleVideo url={data.videos[0]}/>
-                        }
-                    </>
-                }
-                <div style={{ height: "40px" }}></div>
-                <div className={styles.imageGallery}>
+        <SideNavigation>
+            <div className={styles.container}>
+                <div className={clsx(styles.content, styles.contentDetails)}>
+                    <BackButton url="/performances"/>
+                    <h1>{data.title}</h1>
+                    <p>
+                        {data.description}
+                    </p>
+                    <br />
+                    <p>
+                        {data.credits}
+                    </p>
+                    <div style={{height: "40px"}}></div>
                     {
-                        data.images.map((item, index) => (
-                            <div key={index} className={styles.imageContainer}>
-                                <Image src={item} alt="" fill placeholder="blur" />
-                            </div>)
-                        )
+                        data.videos.length > 0 &&
+                        <>
+                            {
+                                data.videos.length > 1
+                                    ? <VideoSlider source={data.videos}/>
+                                    : <SingleVideo url={data.videos[0]}/>
+                            }
+                        </>
                     }
+                    <div style={{ height: "40px" }}></div>
+                    <div className={styles.imageGallery}>
+                        {
+                            data.images.map((item, index) => (
+                                <div key={index} className={styles.imageContainer}>
+                                    <Image src={item} alt="" fill placeholder="blur" />
+                                </div>)
+                            )
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
+        </SideNavigation>
     );
 }
 

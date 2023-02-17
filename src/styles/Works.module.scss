@@ -21,13 +21,6 @@
         border-radius: 4px;
         cursor: pointer;
 
-        &:hover {
-            & .workListItemImage > img {
-                transition: scale 0.1s ease-out;
-                scale: 1.1;
-            }
-        }
-
         &Image {
             position: relative;
             width: 100%;
@@ -51,6 +44,39 @@
             font-weight: 400;
             color: #fff;
             text-shadow: 1px 1px #000;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .workList {
+        gap: 30px;
+
+        &Item {
+            height: 220px;
+
+            & > p {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .workList {
+        
+        &Item {
+            &:hover {
+                & .workListItemImage > img {
+                    transition: scale 0.1s ease-out;
+                    scale: 1.1;
+                }
+            }
         }
     }
 }
