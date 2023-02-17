@@ -32,7 +32,8 @@ export default function PerformancesPage() {
                                 detailsUrl="/performances/details/a-woman"
                             />
                         </PerformanceItem>
-                        <PerformanceItem>
+                        <PerformanceItem reverse>
+                            <PerformanceItemImage src={imgTamSinh} />
                             <PerformanceItemContent 
                                 title="Tam Sinh"
                                 content={
@@ -46,7 +47,6 @@ export default function PerformancesPage() {
                                 }
                                 detailsUrl="/performances/details/tam-sinh"
                             />
-                            <PerformanceItemImage src={imgTamSinh} />
                         </PerformanceItem>
                         <PerformanceItem>
                             <PerformanceItemImage src={imgLego} />
@@ -62,7 +62,8 @@ export default function PerformancesPage() {
                                 detailsUrl="/performances/details/l-ego"
                             />
                         </PerformanceItem>
-                        <PerformanceItem>
+                        <PerformanceItem reverse>
+                            <PerformanceItemImage src={imgCramped} />
                             <PerformanceItemContent 
                                 title="Chật (Journey of Chat)"
                                 content={
@@ -72,7 +73,6 @@ export default function PerformancesPage() {
                                 }
                                 detailsUrl="/performances/details/cramped"
                             />
-                            <PerformanceItemImage src={imgCramped} />
                         </PerformanceItem>
                     </div>
                 </div>

@@ -48,6 +48,10 @@
     flex-direction: row;
     gap: 40px;
 
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+
     &Image {
         position: relative;
         width: 50%;
@@ -171,6 +175,40 @@
 
     &.large {
         margin-top: 10px;
+        padding: 4px 80px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 60px 20px 20px 20px;
+    }
+
+    .performanceItem {
+        flex-direction: column-reverse;
+        gap: 20px;
+        
+        &.reverse {
+            flex-direction: column-reverse;
+        }
+
+        &Image {
+            width: 100%;
+            height: 220px;
+        }
+
+        &Content {
+            width: 100%;
+            height: auto;
+            padding: 0;
+
+            & > a {
+                text-align: center;
+            }
+        }
+    }
+
+    .viewMoreButton {
         padding: 4px 80px;
     }
 }
