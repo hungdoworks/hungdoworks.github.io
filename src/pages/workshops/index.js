@@ -1,7 +1,6 @@
 import styles from "@/styles/Performances.module.scss"
 import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
-import { PerformanceItemImage } from "@/components/performance-item-image";
 
 import imgWorkshopNGO from "../../../public/images/workshop-ngo.png";
 import imgWorkshopSaiGon from "../../../public/images/workshop-saigon.jpg";
@@ -16,8 +15,8 @@ export default function WorkshopPage() {
                     <h1>Workshops</h1>
                     <div className={styles.performanceList}>
                         <PerformanceItem>
-                            <PerformanceItemImage src={imgWorkshopNGO} />
                             <PerformanceItemContent 
+                                imageSrc={imgWorkshopNGO}
                                 title="“Release and Connect” for NGO"
                                 content={
                                     <>
@@ -28,8 +27,8 @@ export default function WorkshopPage() {
                             />
                         </PerformanceItem>
                         <PerformanceItem reverse>
-                            <PerformanceItemImage src={imgWorkshopSaiGon} />
                             <PerformanceItemContent 
+                                imageSrc={imgWorkshopSaiGon}
                                 title="“Connect and be creative” through Contemporary Dance"
                                 content={
                                     <>

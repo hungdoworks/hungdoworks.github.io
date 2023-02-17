@@ -1,7 +1,6 @@
 import styles from "@/styles/Performances.module.scss"
 import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
-import { PerformanceItemImage } from "@/components/performance-item-image";
 import BackButton from "@/components/back-button";
 
 import imgPlumApricot from "../../../public/images/choreo_plum_apricot.jpg";
@@ -19,8 +18,8 @@ export default function ChoreographyPage() {
                     <h1>Choreography</h1>
                     <div className={styles.performanceList}>
                         <PerformanceItem>
-                            <PerformanceItemImage src={imgPlumApricot} />
                             <PerformanceItemContent
+                                imageSrc={imgPlumApricot}
                                 title={"Mơ mận (Plum Apricot)"}
                                 content={
                                     <span>When the apricots are ripe and the plums are still on the tree</span>
@@ -29,8 +28,8 @@ export default function ChoreographyPage() {
                             />
                         </PerformanceItem>
                         <PerformanceItem reverse>
-                            <PerformanceItemImage src={imgWhisperWindWater} />
                             <PerformanceItemContent 
+                                imageSrc={imgWhisperWindWater}
                                 title="Thầm Thì Gió Nước (Whisper, Wind, Water)"
                                 content={
                                     <>
@@ -43,8 +42,8 @@ export default function ChoreographyPage() {
                             />
                         </PerformanceItem>
                         <PerformanceItem>
-                            <PerformanceItemImage src={imgTheRehearsal} />
                             <PerformanceItemContent 
+                                imageSrc={imgTheRehearsal}
                                 title={
                                     <>
                                         <span>Phòng Tập</span>

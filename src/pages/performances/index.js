@@ -1,7 +1,6 @@
 import styles from "@/styles/Performances.module.scss"
 import { PerformanceItem } from "@/components/performance-item";
 import { PerformanceItemContent } from "@/components/performance-item-content";
-import { PerformanceItemImage } from "@/components/performance-item-image";
 import WordAWoman from "@/components/word-a-woman";
 import BackButton from "@/components/back-button";
 import SideNavigation from "@/components/side-nav";
@@ -21,8 +20,8 @@ export default function PerformancesPage() {
                     <h1>Performances</h1>
                     <div className={styles.performanceList}>
                         <PerformanceItem>
-                            <PerformanceItemImage src={imgAWoman} />
                             <PerformanceItemContent
+                                imageSrc={imgAWoman}
                                 title={<WordAWoman />}
                                 content={
                                     <span>
@@ -33,8 +32,8 @@ export default function PerformancesPage() {
                             />
                         </PerformanceItem>
                         <PerformanceItem reverse>
-                            <PerformanceItemImage src={imgTamSinh} />
                             <PerformanceItemContent 
+                                imageSrc={imgTamSinh}
                                 title="Tam Sinh"
                                 content={
                                     <>
@@ -49,8 +48,8 @@ export default function PerformancesPage() {
                             />
                         </PerformanceItem>
                         <PerformanceItem>
-                            <PerformanceItemImage src={imgLego} />
                             <PerformanceItemContent 
+                                imageSrc={imgLego}
                                 title="L'ego"
                                 content={
                                     <>
@@ -63,8 +62,8 @@ export default function PerformancesPage() {
                             />
                         </PerformanceItem>
                         <PerformanceItem reverse>
-                            <PerformanceItemImage src={imgCramped} />
                             <PerformanceItemContent 
+                                imageSrc={imgCramped}
                                 title="Chật (Journey of Chat)"
                                 content={
                                     <>

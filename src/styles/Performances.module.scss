@@ -48,6 +48,10 @@
     flex-direction: row;
     gap: 40px;
 
+    & > a {
+        display: none;
+    }
+
     &.reverse {
         flex-direction: row-reverse;
     }
@@ -200,6 +204,11 @@
     .performanceItem {
         flex-direction: column-reverse;
         gap: 20px;
+
+        & > a {
+            display: block;
+            margin-top: 10px;
+        }
         
         &.reverse {
             flex-direction: column-reverse;
@@ -216,7 +225,7 @@
             padding: 0;
 
             & > a {
-                text-align: center;
+                display: none;
             }
         }
     }
