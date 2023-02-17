@@ -184,6 +184,14 @@
         padding: 60px 20px 20px 20px;
     }
 
+    .content {
+        &Details {
+            & > p {
+                margin: 0;
+            }
+        }
+    }
+
     .performanceItem {
         flex-direction: column-reverse;
         gap: 20px;
@@ -210,5 +218,17 @@
 
     .viewMoreButton {
         padding: 4px 80px;
+    }
+
+    .imageGallery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        background: #222;
+
+        & .imageContainer {
+            width: 100%;
+        }
     }
 }
