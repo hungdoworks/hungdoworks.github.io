@@ -1,4 +1,5 @@
-import styles from "@/styles/Performances.module.scss";
+import styles from "@/styles/components/VideoSlider.module.scss";
+import performanceStyles from "@/styles/Performances.module.scss";
 import clsx from "clsx";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
@@ -47,7 +48,7 @@ export default function VideoSlider({ source }) {
                 {
                     source.map((item, index) => (
                         <div key={index}>
-                            <div className={styles.videoContainer}>
+                            <div className={performanceStyles.videoContainer}>
                                 <iframe 
                                     width="100%" 
                                     height="auto" 

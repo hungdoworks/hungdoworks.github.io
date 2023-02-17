@@ -80,18 +80,6 @@
                     text-decoration: underline;
                     text-underline-offset: 4px;
                     text-decoration-thickness: 2px;
-                    
-                    // Save for later use
-                    // &::after {
-                    //     content: ' ';
-                    //     display: inline-block;
-                    //     width: 24px;
-                    //     height: 18px;
-                    //     background: url("/icons/ic_arrow_forward.svg") no-repeat;
-                    //     background-size: cover;
-                    //     background-position: center center;
-                    //     margin-left: 8px;
-                    // }
                 }
             }
         }
@@ -140,18 +128,6 @@
                     text-decoration: underline;
                     text-underline-offset: 4px;
                     text-decoration-thickness: 2px;
-                    
-                    // Save for later use
-                    // &::after {
-                    //     content: ' ';
-                    //     display: inline-block;
-                    //     width: 24px;
-                    //     height: 18px;
-                    //     background: url("/icons/ic_arrow_forward.svg") no-repeat;
-                    //     background-size: cover;
-                    //     background-position: center center;
-                    //     margin-left: 8px;
-                    // }
                 }
             }
         }
@@ -196,47 +172,5 @@
     &.large {
         margin-top: 10px;
         padding: 4px 80px;
-    }
-}
-
-.videoSlider {
-    display: flex;
-    align-items: center;
-
-    &Content {
-        display: flex;
-        width: 1000px;
-        overflow: hidden;
-        margin: 0 auto;
-    }
-
-    &Button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 48px;
-        height: 48px;
-        border: 1px solid #333;
-        border-radius: 24px;
-        background: #333;
-
-        &:active {
-            background: #666;
-        }
-    }
-}
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 4px;
-    width: 20px;
-    margin: 0 2px;
-    background-color: #666;
-    border-radius: 4px;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-
-    &.active {
-        background-color: #fff;
     }
 }
