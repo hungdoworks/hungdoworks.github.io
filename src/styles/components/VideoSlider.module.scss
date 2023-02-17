@@ -39,3 +39,15 @@
         background-color: #fff;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .videoSlider {
+        &Content {
+            width: 300px;
+        }
+
+        &Button {
+            scale: 0.65;
+        }
+    }
+}
