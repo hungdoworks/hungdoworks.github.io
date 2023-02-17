@@ -27,7 +27,8 @@ export default function WorkshopPage() {
                                 detailsUrl="/workshops/details/release-and-connect"
                             />
                         </PerformanceItem>
-                        <PerformanceItem>
+                        <PerformanceItem reverse>
+                            <PerformanceItemImage src={imgWorkshopSaiGon} />
                             <PerformanceItemContent 
                                 title="“Connect and be creative” through Contemporary Dance"
                                 content={
@@ -38,7 +39,6 @@ export default function WorkshopPage() {
                                 }
                                 detailsUrl="/workshops/details/connect-and-creative"
                             />
-                            <PerformanceItemImage src={imgWorkshopSaiGon} />
                         </PerformanceItem>
                     </div>
                 </div>
